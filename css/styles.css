@@ -383,22 +383,15 @@
 
     @media (max-width: 750px) {
       .nav-links {
-        display: none;
+        display: flex;
       }
     
-      .nav-links > li:not(.language-switcher) {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+      .nav-item {
+        display: none;
       }
     
       .language-switcher {
         display: flex;
-        align-items: center;
-        gap: 0.35rem;
-        margin-left: 0;
       }
     
       section {
