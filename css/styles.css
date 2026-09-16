@@ -388,7 +388,9 @@
       }
 
       .project-image img {
-        min-height: 240px;
+        min-height: 0;
+        height: auto;
+        object-fit: contain;
       }
 
       .about-content p {
@@ -396,6 +398,7 @@
       }
     }
 
+    
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
@@ -413,4 +416,26 @@
         opacity: 1;
         transform: none;
       }
+    }
+
+    .language-switcher {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-left: 0.5rem;
+    }
+
+    .language-button {
+      padding: 0.2rem 0.3rem;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+
+    .language-button:hover,
+    .language-button.active {
+      color: var(--accent-secondary);
     }
