@@ -16,19 +16,32 @@
   <nav class="navbar">
     <div class="container nav-content">
       <a href="#home" class="logo">~/portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
 
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+          <li class="language-switcher">
+            <button class="language-button active" data-language="en">
+              EN
+            </button>
+
+            <span>/</span>
+
+            <button class="language-button" data-language="es">
+              ES
+            </button>
+          </li>
+        </ul>
     </div>
   </nav>
 
   <main>
     <section id="home" class="hero">
       <div class="container hero-content reveal">
-        <p class="terminal-label">$ inmate302@Github </p>
+        <p class="terminal-label">
+          $ inmate302@GitHub
+        </p>
 
         <h1>
           <span
@@ -37,21 +50,30 @@
           ></span>
         </h1>
 
-        <p class="hero-description">
-          Teacher, developer, and creative problem solver building thoughtful
-          digital experiences.
+        <p
+          class="hero-description"
+          data-i18n="hero.description"
+        >
+          Teacher, developer, and a creative problem solver.
         </p>
 
-        <a class="button" href="#projects">View my work</a>
+        <a
+          class="button"
+          href="#projects"
+          data-i18n="hero.button"
+        >
+          View my work
+        </a>
       </div>
     </section>
+
 
     <section id="about">
       <div class="container about-content reveal">
 
-        <h2>A little about me</h2>
+        <h2 data-i18n="about.title">A little about me</h2>
 
-        <p>
+        <p data-i18n="about.description">
           With my interest in programming kickstarted by my interest in games,
           I'm a developer with a background in teaching and I have spent the last
           2 years learning backend and fullstack development.
@@ -62,7 +84,7 @@
     <section id="projects" class="projects-section">
       <div class="container">
         <div class="projects-header reveal">
-          <h2>Projects</h2>
+          <h2 data-i18n="nav.projects">Projects</h2>
         </div>
 
         <article class="project reveal">
@@ -70,7 +92,7 @@
 
             <h3>BibliotecaVirtual-UNTEC</h3>
 
-            <p>
+            <p data-i18n="projects.project1.description">
               The toughest project yet. A web application for library management
               with persistance, authentication and authorization written in Java. 
               A balancing act in not overscoping while dealing with a vague set of
@@ -82,7 +104,7 @@
               <li>Java</li>
             </ul>
 
-            <a class="button" href="https://github.com/inmate302/biblioteca-virtual-UNTEC" target="_blank" rel="noopener">
+            <a class="button" href="https://github.com/inmate302/biblioteca-virtual-UNTEC" data-i18n="projects.viewProject">
               View project
             </a>
           </div>
@@ -100,7 +122,7 @@
 
             <h3>SmartTaskNinja</h3>
 
-            <p>
+            <p data-i18n="projects.project2.description">
               A simple CLI task manager app.
               Tasks can be created and marked as completed.
               A learning project for practicing OOP principles.
@@ -111,7 +133,7 @@
               <li>TUI</li>
             </ul>
 
-            <a class="button" href="https://github.com/inmate302/SmartTaskNinja/" target="_blank" rel="noopener">
+            <a class="button" href="https://github.com/inmate302/SmartTaskNinja/" data-i18n="projects.viewProject">
               View project
             </a>
           </div>
@@ -129,7 +151,7 @@
 
             <h3>TestiCL</h3>
 
-            <p>
+            <p data-i18n="projects.project3.description">
               Baby's first widdle app. This tui app of unfortunate name
               shows the inputs of your controller in the terminal screen.
               It was my first personal project at <a href="http://boot.dev">boot.dev</a>.
@@ -143,7 +165,7 @@
               <li>SDL</li>
             </ul>
 
-            <a class="button" href="https://github.com/inmate302/TestiCl" target="_blank" rel="noopener">
+            <a class="button" href="https://github.com/inmate302/TestiCl" data-i18n="projects.viewProject">
               View project
             </a>
           </div>
@@ -161,15 +183,15 @@
     <section id="contact">
       <div class="container contact-content reveal">
 
-        <h2>Let’s connect</h2>
+        <h2 data-i18n="contact.title">Let’s connect</h2>
 
-        <p>
+        <p data-i18n="contact.description">
           Whether you have a project in mind, a question, or simply want to say
           hello, you can find me through any of the channels below.
         </p>
 
         <div class="contact-links">
-          <a class="contact-link" href="mailto:retamalnelson@gmail.com">
+          <a class="contact-link" href="mailto:retamalnelson@gmail.com" data-i18n="contact.email">
             Email
           </a>
 
@@ -197,10 +219,10 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container" data-i18n="footer">
       © <span id="year"></span> Nelson Retamal. Built with HTML, CSS, and JavaScript.
     </div>
   </footer>
-<script src="./scripts/anim.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
 </html>
