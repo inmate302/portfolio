@@ -382,9 +382,6 @@
     /* Responsive design */
 
     @media (max-width: 750px) {
-      .nav-links {
-        display: none;
-      }
 
       section {
         min-height: auto;
