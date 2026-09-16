@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nelson Retamal | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio website for Your Name"
+  />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="logo">~/portfolio</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content reveal">
+        <p class="terminal-label">$ katulo@cachy-os</p>
+
+        <h1>
+          <span
+            class="typing-text"
+            data-text="Nelson Retamal"
+          ></span>
+        </h1>
+
+        <p class="hero-description">
+          Teacher, developer, and creative problem solver building thoughtful
+          digital experiences.
+        </p>
+
+        <a class="button" href="#projects">View my work</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-content reveal">
+        <p class="section-heading">01 / About me</p>
+
+        <h2>A little about me</h2>
+
+        <p>
+          With my interest in programming kickstarted by my interest in games,
+          I'm a developer with a background in teaching and I have spent the last
+          2 years learning backend and fullstack development.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="projects-header reveal">
+          <p class="section-heading">02 / Selected work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <article class="project reveal">
+          <div class="project-info">
+            <p class="section-heading">Project 01</p>
+
+            <h3>BibliotecaVirtual-UNTEC</h3>
+
+            <p>
+              The toughest project yet. A web application for library management
+              with persistance, authentication and authorization written in Java. 
+              A balancing act in not overscoping while dealing with a vague set of
+              project requirements.
+            </p>
+
+            <ul class="project-tags">
+              <li>CSS</li>
+              <li>Java</li>
+            </ul>
+
+            <a class="button" href="https://github.com/inmate302/biblioteca-virtual-UNTEC" target="_blank" rel="noopener">
+              View project
+            </a>
+          </div>
+
+          <div class="project-image">
+            <img
+              src="./gifs/1.gif"
+              alt="Workspace showing a laptop and notebook"
+            />
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-info">
+            <p class="section-heading">Project 02</p>
+
+            <h3>SmartTaskNinja</h3>
+
+            <p>
+              A simple CLI task manager app.
+              Tasks can be created and marked as completed.
+              A learning project for practicing OOP principles.
+            </p>
+
+            <ul class="project-tags">
+              <li>Java</li>
+              <li>TUI</li>
+            </ul>
+
+            <a class="button" href="https://github.com/inmate302/SmartTaskNinja/" target="_blank" rel="noopener">
+              View project
+            </a>
+          </div>
+
+          <div class="project-image">
+            <img
+              src="./gifs/2.gif"
+              alt="A command line prompt showing a task manager application"
+            />
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-info">
+            <p class="section-heading">Project 03</p>
+
+            <h3>TestiCL</h3>
+
+            <p>
+              Baby's first widdle app. This tui app of unfortunate name
+              shows the inputs of your controller in the terminal screen.
+              It was my first personal project at <a href="http://boot.dev">boot.dev</a>.
+              While not proud of its juvenile name, I am proud of the lessons learned in
+              modularity and using external libraries. Also available in <a href="https://github.com/inmate302/TestiCLGO">GO</a> 
+            </p>
+
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Ncurses</li>
+              <li>SDL</li>
+            </ul>
+
+            <a class="button" href="https://github.com/inmate302/TestiCl" target="_blank" rel="noopener">
+              View project
+            </a>
+          </div>
+
+          <div class="project-image">
+            <img
+              src="./gifs/3.gif"
+              alt="Ascii art of a controller in a terminal"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-content reveal">
+        <p class="section-heading">03 / Get in touch</p>
+
+        <h2>Let’s connect</h2>
+
+        <p>
+          Whether you have a project in mind, a question, or simply want to say
+          hello, you can find me through any of the channels below.
+        </p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:retamalnelson@gmail.com">
+            Email
+          </a>
+
+          <a
+            class="contact-link"
+            href="https://github.com/inmate302"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub
+          </a>
+
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/nelson-retamal/"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Nelson Retamal. Built with HTML, CSS, and JavaScript.
+    </div>
+  </footer>
+<script src="./scripts/anim.js"></script>
+</body>
+</html>
