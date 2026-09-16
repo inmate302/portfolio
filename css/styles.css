@@ -382,50 +382,62 @@
     /* Responsive design */
 
     @media (max-width: 750px) {
-      
       .nav-links {
-        min-height: auto;
-        padding: 7rem 0;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
       }
-        
+    
+      .nav-links > li:not(.language-switcher) {
+        display: none;
+      }
+    
+      .language-switcher {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-left: 0;
+      }
+    
       section {
         min-height: auto;
         padding: 7rem 0;
       }
-
+    
       .hero {
         min-height: 100vh;
         padding-top: 9rem;
       }
-
+    
       .project {
         grid-template-columns: 1fr;
         gap: 2rem;
         min-height: auto;
         margin-bottom: 5rem;
       }
-
+    
       .project:nth-of-type(even) .project-info,
       .project:nth-of-type(even) .project-image {
         order: initial;
       }
-
+    
       .project-image {
         min-height: 240px;
       }
-
+    
       .project-image img {
         min-height: 0;
         height: auto;
         object-fit: contain;
       }
-
+    
       .about-content p {
         text-align: center;
       }
     }
 
-    
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
